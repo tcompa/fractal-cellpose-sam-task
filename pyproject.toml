@@ -140,4 +140,4 @@ init-tasks = [
 ]
 
 [tool.pixi.pypi-options]
-no-build = true
+no-build = false
