@@ -26,4 +26,8 @@ jobs:
           cache: false
           pixi-version: "latest"
 
-      - run: pixi install -a
+      - run: |
+          echo "[tool.pixi.pypi-options]" >> pyproject.toml
+          echo "no-build = true" >> pyproject.toml
+
+      - run: pixi install -a -v
