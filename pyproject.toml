@@ -138,3 +138,6 @@ init-tasks = [
     { task = "create-manifest", environment = "dev" },
     { task = "test", environment = "dev" },
 ]
+
+[tool.pixi.pypi-options]
+no-build = true
